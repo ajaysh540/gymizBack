@@ -1,5 +1,6 @@
 package com.Gymiz.Gymiz.Model;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -14,27 +15,27 @@ import java.sql.Date;
 @Entity
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name="membership_plan")
+@Table(name = "membership_plan")
 public class MembershipPlans {
-    @Id
-    @Column(name="membership_id")
-    Long MembershipId;
-    @Column(name="membersip_code")
-    String MembershipCode;
     @Column(name = "membership_name")
     String MembershipName;
+    @Id
+    @Column(name = "membership_id")
+    Long MembershipId;
+    @Column(name = "membership_code")
+    String MembershipCode;
     @Column(name = "membership_status")
     String MembershipStatus;
     @Column(name = "membership_description")
     String MembershipDesc;
     @Column(name = "membership_validity")
     String MembershipValidity;
-    @Column(name="membership_grace_period")
+    @Column(name = "membership_grace_period")
     String MembershipGracePeriod;
     @Column(name = "membership_price")
     Long MembershipPrice;
     @Column(name = "membership_effective_from")
     Date MembershipEffectiveFrom;
-    @Column(name="membership_expiry_date")
+    @Column(name = "membership_expiry_date")
     Date MembershipExpiryDate;
 }
