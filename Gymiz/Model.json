@@ -1,0 +1,18 @@
+{
+    "membership_plan": {
+        "membership_name": "name",
+        "membership_details": [
+            {
+                "membership_code": "code",
+                "membership_id": "123",
+                "membership_status": "active",
+                "membership_description": "some description",
+                "membership_validity": "3 months",
+                "membership_grace_period": "10 days",
+                "membership_price": "15000",
+                "membership_effective_from": "20/01/2020",
+                "membership_expiry_date": "20/03/2020"
+            }
+        ]
+    }
+}
