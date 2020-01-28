@@ -5,6 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.sql.Date;
 import java.util.List;
 
 @Data
@@ -20,6 +21,11 @@ public class MembershipPlans {
     String MembershipName;
     @Column(name = "membership_description")
     String MembershipDesc;
-    @OneToMany(cascade = CascadeType.REMOVE,fetch = FetchType.EAGER)
+    @Column(name = "membership_effective_from")
+    Date membershipEffectiveFrom;
+    @Column(name = "membership_expiry_date")
+    Date membershipExpiryDate;
+    @OneToMany(cascade = CascadeType.ALL)
+            @JoinTable(name = "plan_details")
     List<PlanDetails> planDetails;
 }

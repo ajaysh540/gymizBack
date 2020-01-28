@@ -17,20 +17,20 @@ import java.sql.Date;
 @Table(name = "plan_detail")
 public class PlanDetails {
     @Id
-    @Column(name = "membership_id")
-    Long MembershipId;
-    @Column(name = "membership_code")
-    String MembershipCode;
-    @Column(name = "membership_status")
-    String MembershipStatus;
-    @Column(name = "membership_validity")
-    String MembershipValidity;
-    @Column(name = "membership_grace_period")
-    String MembershipGracePeriod;
-    @Column(name = "membership_price")
-    Long MembershipPrice;
-    @Column(name = "membership_effective_from")
-    Date MembershipEffectiveFrom;
-    @Column(name = "membership_expiry_date")
-    Date MembershipExpiryDate;
+    @Column(name = "plan_id")
+    Long PlanId;
+    @Column(name = "plan_code")
+    String PlanCode;
+    @Column(name = "plan_status")
+    String PlanStatus;
+    @Column(name = "plan_validity")
+    String PlanValidity;
+    @Column(name = "plan_grace_period")
+    String PlanGracePeriod;
+    @Column(name = "plan_price")
+    Long PlanPrice;
+    @Column(name = "plan_effective_from")
+    Date PlanEffectiveFrom;
+    @Column(name = "plan_expiry_date")
+    Date PlanExpiryDate;
 }
